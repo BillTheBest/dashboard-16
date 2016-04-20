@@ -1,7 +1,7 @@
 # dashboard
-A configurable dashboard implemented using web technologies. Data is loaded from JSON - via files or URLs.
-
-You configure the dashboard via JSON files too.
+A configurable dashboard implemented using web technologies. The dashboard is configured via JSON.
+The data to display is also loaded from JSON. This JSON is loaded from separate JavaScript files
+(via <script> elements), so the JSON data can be loaded either from the disk or a URL.
 
 The dashboard consists of a set of templates (HTML, CSS etc.), some JavaScript code files, and then
 the JSON files containing configuration and data.
