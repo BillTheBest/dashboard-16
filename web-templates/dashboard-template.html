@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- include dashboard CSS files -->
+    <link rel="stylesheet" type="text/css" href="dashboard-template.css">
+
+	<!-- include dashboard JavaScript functions -->
+	<script src="dashboard-functions.js"></script>
+	<script src="kpi-functions.js"></script>
+	
+	<!-- data to display in the dashboard -->
+	<script src="financial-data.js"></script>
+	<script src="kpi-data.js"></script>
+	
+	<!-- configuration of dashboard -->
+	<script src="dashboard-config.js"></script>
+
+	<!-- booting the dashboard -->
+	<script>
+	var dashboardObj = dashboard();
+
+	window.onload = function() {
+		dashboardObj.draw(dashboardConfig);
+	}
+	</script>
+
+</head>
+
+
+<!-- dashboard HTML template -->
+<body>
+
+<div id="topBar">
+<div id="topBarTitle">Dashboard</div>
+<div id="topBarBrand">Dashboard by Jenkov.com</code>
+</div>
+
+<div id="mainArea">
+<div id="menuRoot"></div>
+
+<a name="financial"></a>
+<div id="financeRoot"></div>
+
+<a name="kpis"></a>
+<div id="kpiRoot"></div>
+
+</div>
+</html> 
